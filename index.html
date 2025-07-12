@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dortex AI Pvt Ltd | IT Services, Training & Placement in Mohali</title>
+  <meta name="description" content="Dortex AI Pvt Ltd: Modern IT services, training, and placement in Mohali. 100% placement assistance, expert mentors, and innovative AI-driven solutions.">
+  <meta name="keywords" content="Dortex AI, IT Services, Training, Placement, AI, ML, Web Development, App Development, Digital Marketing, Mohali, Cloud, Data Analysis, UI/UX, Certification, Internship, India">
+  <meta name="author" content="Dortex AI Pvt Ltd">
+  <meta property="og:title" content="Dortex AI Pvt Ltd | IT Services, Training & Placement in Mohali">
+  <meta property="og:description" content="Empowering Digital Innovation with AI. IT services, training, and placement with 100% assistance. Join Dortex AI for your career growth.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dortexai.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dortex AI Pvt Ltd | IT Services, Training & Placement in Mohali">
+  <meta name="twitter:description" content="Empowering Digital Innovation with AI. IT services, training, and placement with 100% assistance. Join Dortex AI for your career growth.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80">
+  <link rel="canonical" href="https://dortexai.com/" />
+  <link rel="icon" type="image/png" href="/assets/logo-dortex.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dortexDarkBlue: '#002A5E',
+            dortexElectricBlue: '#00CFFF',
+            dortexSkyBlue: '#73D8FF',
+            dortexLightGray: '#F3F6F9',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; font-size: 1rem; background: #F3F6F9; color: #181A20; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+    nav a, nav button { font-size: 1rem !important; }
+    img { max-width: 100%; height: auto; border-radius: 0.5rem; }
+    a { text-underline-offset: 2px; }
+    .bg-dortexDarkBlue { background-color: #002A5E; }
+    .text-dortexDarkBlue { color: #002A5E; }
+    .bg-dortexElectricBlue { background-color: #00CFFF; }
+    .text-dortexElectricBlue { color: #00CFFF; }
+    .bg-dortexSkyBlue { background-color: #73D8FF; }
+    .text-dortexSkyBlue { color: #73D8FF; }
+    .bg-dortexLightGray { background-color: #F3F6F9; }
+    .text-dortexLightGray { color: #F3F6F9; }
+    .hover\:bg-dortexDarkBlue:hover { background-color: #002A5E; }
+    .hover\:bg-dortexElectricBlue:hover { background-color: #00CFFF; }
+    .hover\:text-dortexElectricBlue:hover { color: #00CFFF; }
+    .hover\:shadow-xl:hover { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); }
+    .rounded-full { border-radius: 9999px; }
+  </style>
+</head>
+<body class="bg-white text-black font-poppins">
+    <!-- Sticky Navbar -->
+    <nav class="fixed w-full z-40 bg-white/80 backdrop-blur shadow-lg border-b border-gray-100">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="flex items-center gap-2">
+       <a href="/" class="flex items-center gap-2">
+    <img src="/assets/dortex_logo.jpg" alt="Dortex AI Logo" class="h-10 w-auto" />
+    <span class="text-xl font-bold text-indigo-700">Dortex AI</span>
+  </a>
+    </div>
+    <div class="hidden md:flex space-x-8 items-center text-lg font-medium">
+      <a href="#home" class="hover:text-[#00cfff] transition">Home</a>
+      <div class="relative group">
+        <button class="hover:text-[#00cfff] transition flex items-center">Services <i class="fa fa-chevron-down ml-1 text-xs"></i></button>
+        <div class="absolute left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto border border-gray-100">
+          <a href="#webdev" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition rounded-t-xl">Web Development</a>
+          <a href="#appdev" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">App Development</a>
+          <a href="#seo" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">SEO & Digital Marketing</a>
+          <a href="#data" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">Data Analysis</a>
+          <a href="#ai" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">AI/ML</a>
+          <a href="#cloud" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">Cloud Services</a>
+          <a href="#uiux" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition rounded-b-xl">UI/UX Design</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <button class="hover:text-[#00cfff] transition flex items-center">Training <i class="fa fa-chevron-down ml-1 text-xs"></i></button>
+        <div class="absolute left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto border border-gray-100">
+          <a href="#training-hr" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition rounded-t-xl">HR Training</a>
+          <a href="#training-bpo" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">BPO Training</a>
+          <a href="#training-immigration" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">Immigration Training</a>
+          <a href="#training-logistics" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">Logistics Training</a>
+          <a href="#training-it" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition">IT Training</a>
+          <a href="#training-legal" class="block px-5 py-3 hover:bg-[#00cfff] hover:text-white transition rounded-b-xl">Legal Firms Training</a>
+        </div>
+      </div>
+      <a href="#about" class="hover:text-[#00cfff] transition">About</a>
+      <a href="#contact" class="hover:text-[#00cfff] transition">Contact</a>
+    </div>
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden text-3xl text-[#002d72] focus:outline-none">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden fixed top-0 right-0 h-full w-72 bg-white border-l-4 border-[#00cfff] shadow-2xl z-50 transform translate-x-full transition-transform duration-300">
+    <div class="flex justify-between items-center px-6 py-4 border-b border-[#00cfff] bg-[#00cfff]/10">
+      <span class="text-2xl font-extrabold text-[#002d72]">DORTEX</span>
+      <button id="close-menu" class="text-2xl text-[#00cfff] hover:text-[#002d72] transition"><i class="fa fa-times"></i></button>
+    </div>
+    <nav class="flex flex-col space-y-4 p-6 text-lg font-medium bg-white">
+      <a href="#home" class="hover:text-[#00cfff] transition">Home</a>
+      <div class="group">
+        <button class="flex items-center hover:text-[#00cfff] transition">Services <i class="fa fa-chevron-down ml-1 text-xs"></i></button>
+        <div class="ml-4 mt-2 flex flex-col space-y-1">
+          <a href="#webdev" class="hover:text-[#00cfff] transition">Web Development</a>
+          <a href="#appdev" class="hover:text-[#00cfff] transition">App Development</a>
+          <a href="#seo" class="hover:text-[#00cfff] transition">SEO & Digital Marketing</a>
+          <a href="#data" class="hover:text-[#00cfff] transition">Data Analysis</a>
+          <a href="#ai" class="hover:text-[#00cfff] transition">AI/ML</a>
+          <a href="#cloud" class="hover:text-[#00cfff] transition">Cloud Services</a>
+          <a href="#uiux" class="hover:text-[#00cfff] transition">UI/UX Design</a>
+        </div>
+      </div>
+      <div class="group">
+        <button class="flex items-center hover:text-[#00cfff] transition">Training <i class="fa fa-chevron-down ml-1 text-xs"></i></button>
+        <div class="ml-4 mt-2 flex flex-col space-y-1">
+          <a href="#training-hr" class="hover:text-[#00cfff] transition">HR Training</a>
+          <a href="#training-bpo" class="hover:text-[#00cfff] transition">BPO Training</a>
+          <a href="#training-immigration" class="hover:text-[#00cfff] transition">Immigration Training</a>
+          <a href="#training-logistics" class="hover:text-[#00cfff] transition">Logistics Training</a>
+          <a href="#training-it" class="hover:text-[#00cfff] transition">IT Training</a>
+          <a href="#training-legal" class="hover:text-[#00cfff] transition">Legal Firms Training</a>
+        </div>
+      </div>
+      <a href="#about" class="hover:text-[#00cfff] transition">About</a>
+      <a href="#contact" class="hover:text-[#00cfff] transition">Contact</a>
+    </nav>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-cover bg-center relative min-h-[80vh] flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80');">
+  <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-[#002d72]/30 to-[#00cfff]/30 z-10"></div>
+  
+  <div class="relative z-20 max-w-3xl mx-auto text-center text-white" data-aos="fade-up">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg">Empowering Digital Innovation</h1>
+    <p class="text-2xl md:text-3xl mb-10 font-medium text-white/90">
+      We deliver all IT services under one roof, helping you scale, innovate, and lead in the digital era.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#contact" class="px-10 py-4 bg-[#002d72] text-white rounded-full font-bold shadow-xl hover:bg-[#00cfff] transition duration-300 transform hover:scale-110 text-lg tracking-wide" data-aos="fade-up" data-aos-delay="200">Get Started</a>
+      <a href="#contact" class="px-10 py-4 bg-white text-[#002d72] border-2 border-[#002d72] rounded-full font-bold shadow-xl hover:bg-[#00cfff] hover:text-white hover:border-[#00cfff] transition duration-300 transform hover:scale-110 text-lg tracking-wide" data-aos="fade-up" data-aos-delay="300">Contact Us</a>
+    </div>
+    
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <div class="bg-white/20 rounded-lg px-6 py-3 text-lg font-semibold shadow backdrop-blur border border-white/30">
+        Web, Mobile, Cloud, AI, Data, Design & More
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Our Services -->
+<section id="services" class="py-20 bg-gradient-to-b from-white via-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#00cfff] mb-14 text-center" data-aos="fade-up">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Service Card -->
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up">
+        <i class="fa fa-code text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">Web Development</h3>
+        <p class="text-center text-gray-600 mb-2">Modern, scalable, and secure websites tailored to your business needs. From landing pages to complex web apps, we deliver pixel-perfect solutions.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Responsive & SEO-optimized</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>E-commerce, CMS, Portals</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa fa-mobile-alt text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">App Development</h3>
+        <p class="text-center text-gray-600 mb-2">Cross-platform mobile apps with seamless user experience and performance. We build for Android, iOS, and hybrid platforms.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Flutter, React Native, Native</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>App Store & Play Store Launch</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa fa-search-dollar text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">SEO & Digital Marketing</h3>
+        <p class="text-center text-gray-600 mb-2">Boost your online presence and reach your target audience effectively. We offer SEO, SEM, SMM, and content marketing services.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Google Ads, Facebook Ads</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Branding & Analytics</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up">
+        <i class="fa fa-chart-line text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">Data Analysis</h3>
+        <p class="text-center text-gray-600 mb-2">Unlock insights from your data to drive smarter business decisions. We provide dashboards, reporting, and predictive analytics.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>BI Tools, Power BI, Tableau</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Data Visualization</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa fa-robot text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">AI/ML</h3>
+        <p class="text-center text-gray-600 mb-2">Leverage artificial intelligence and machine learning for innovation. We build custom models, chatbots, and automation solutions.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Deep Learning, NLP, Vision</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>AI Consulting</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72]" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa fa-cloud text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">Cloud Services</h3>
+        <p class="text-center text-gray-600 mb-2">Scalable cloud solutions for agility, security, and cost savings. We help you migrate, manage, and optimize your cloud infrastructure.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>AWS, Azure, GCP</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>DevOps & Automation</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#002d72] md:col-span-3" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa fa-pencil-ruler text-5xl text-[#002d72] mb-5"></i>
+        <h3 class="font-bold text-2xl mb-3">UI/UX Design</h3>
+        <p class="text-center text-gray-600 mb-2">Intuitive and engaging designs for delightful user experiences. We craft wireframes, prototypes, and design systems for web & mobile.</p>
+        <ul class="text-sm text-gray-500 mt-2 space-y-1">
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Figma, Adobe XD, Prototyping</li>
+          <li><i class="fa fa-check text-[#00cfff] mr-2"></i>Brand Identity</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- Placed Candidates Section -->
+<section id="placed-candidates" class="py-20 bg-gradient-to-b from-white via-[#00cfff0d] to-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#002d72] mb-14 text-center" data-aos="fade-up">
+      Our Placed Candidates
+    </h2>
+    <div id="candidates-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Cards will be inserted here -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const candidates = [
+    {
+      name: "Aman Kumar",
+      role: "Software Engineer",
+      company: "Infosys",
+      training: "IT Training",
+      batch: "2025 Batch",
+      image: "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      name: "Priya Sharma",
+      role: "HR Executive",
+      company: "Tata Consultancy Services",
+      training: "HR Training",
+      batch: "2024 Batch",
+      image: "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    {
+      name: "Rohit Verma",
+      role: "BPO Associate",
+      company: "Wipro BPO",
+      training: "BPO Training",
+      batch: "2025 Batch",
+      image: "https://randomuser.me/api/portraits/men/33.jpg"
+    },
+    {
+      name: "Simran Kaur",
+      role: "Immigration Consultant",
+      company: "Y-Axis",
+      training: "Immigration Training",
+      batch: "2024 Batch",
+      image: "https://randomuser.me/api/portraits/women/55.jpg"
+    },
+    {
+      name: "Deepak Singh",
+      role: "Logistics Manager",
+      company: "DHL Logistics",
+      training: "Logistics Training",
+      batch: "2023 Batch",
+      image: "https://randomuser.me/api/portraits/men/44.jpg"
+    },
+    {
+      name: "Anjali Mehra",
+      role: "Legal Associate",
+      company: "Trilegal",
+      training: "Legal Firms Training",
+      batch: "2025 Batch",
+      image: "https://randomuser.me/api/portraits/women/66.jpg"
+    }
+  ];
+
+  const grid = document.getElementById('candidates-grid');
+
+  candidates.forEach((c, index) => {
+    const card = document.createElement('div');
+    card.className =
+      `bg-white rounded-3xl shadow-xl p-10 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-t-4 border-[#00cfff]`;
+    card.setAttribute('data-aos', 'fade-up');
+    card.setAttribute('data-aos-delay', index * 100);
+
+    card.innerHTML = `
+      <img src="${c.image}" alt="${c.name}" class="w-20 h-20 rounded-full mb-5 border-4 border-[#002d72] shadow-lg" loading="lazy">
+      <h3 class="font-bold text-2xl mb-1">${c.name}</h3>
+      <p class="text-[#00cfff] font-semibold mb-2">${c.role}</p>
+      <p class="text-gray-600 mb-2">Placed at <span class="font-bold text-black">${c.company}</span></p>
+      <ul class="text-sm text-gray-500 mt-2 space-y-1 text-center">
+        <li><i class="fa fa-briefcase text-[#00cfff] mr-2"></i>${c.training}</li>
+        <li><i class="fa fa-calendar-check text-[#00cfff] mr-2"></i>${c.batch}</li>
+      </ul>
+    `;
+
+    grid.appendChild(card);
+  });
+</script>
+
+
+  <!-- We Provide Training In -->
+<section id="training-types" class="py-20 bg-gradient-to-b from-[#e5393510] via-white to-[#00cfff10]">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#00cfff] mb-10 text-center" data-aos="fade-up">
+      We Provide Training In
+    </h2>
+    <div id="training-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Cards will be inserted here -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const trainings = [
+    {
+      icon: "fa-users-cog",
+      title: "HR Training",
+      description: "Learn modern HR practices, recruitment, payroll, and compliance for top corporates."
+    },
+    {
+      icon: "fa-headset",
+      title: "BPO Training",
+      description: "Master communication, process, and client handling for BPO/KPO jobs."
+    },
+    {
+      icon: "fa-passport",
+      title: "Immigration Training",
+      description: "Get skilled in visa processing, documentation, and client counseling for immigration firms."
+    },
+    {
+      icon: "fa-truck-moving",
+      title: "Logistics Training",
+      description: "Learn supply chain, warehouse, and logistics management for top MNCs."
+    },
+    {
+      icon: "fa-laptop-code",
+      title: "IT Training",
+      description: "Full stack, web, software, and support skills for IT jobs. (2 months)"
+    },
+    {
+      icon: "fa-balance-scale",
+      title: "Legal Firms Training",
+      description: "Legal process, documentation, and client management for law firm careers."
+    }
+  ];
+
+  const trainingGrid = document.getElementById("training-grid");
+
+  trainings.forEach((t, index) => {
+    const card = document.createElement("div");
+    card.className =
+      "bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-b-4 border-[#e53935]";
+    card.setAttribute("data-aos", "fade-up");
+    if (index % 3 !== 0) card.setAttribute("data-aos-delay", index * 100);
+
+    card.innerHTML = `
+      <i class="fa ${t.icon} text-4xl text-[#00cfff] mb-3"></i>
+      <h4 class="font-bold text-xl mb-2">${t.title}</h4>
+      <p class="text-gray-600 text-center">${t.description}</p>
+    `;
+
+    trainingGrid.appendChild(card);
+  });
+</script>
+
+
+   <!-- Training & Placement Section -->
+<section id="training" class="py-20 bg-gradient-to-b from-[#00cfff10] via-white to-[#e5393510]">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#00cfff] mb-6 text-center" data-aos="fade-up">Training & Placement</h2>
+    <p class="text-center text-lg md:text-xl text-[#e53935] font-semibold mb-10" data-aos="fade-up" data-aos-delay="100">
+      All trainings are just <span class="font-bold">1 month</span> (except <span class="font-bold">IT Training - 2 months</span>).
+      Fees only <span class="font-bold">₹5,000 – ₹8,000</span>! <br class="hidden md:block"/>
+      Get certified, get placed. <span class="text-[#00cfff]">Limited seats. Register now!</span>
+    </p>
+
+    <!-- Registration Buttons -->
+    <div class="flex justify-center gap-6 mb-12" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://wa.me/917991492897?text=Hi%20Vireonix%20Team%2C%20I%20want%20to%20register%20for%20training.%20Here%20is%20my%20resume."
+         target="_blank"
+         class="flex items-center gap-2 px-6 py-3 bg-[#00cfff] text-white rounded-full font-bold shadow-lg hover:bg-[#e53935] transition text-lg"
+         rel="noopener noreferrer">
+        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Registration
+      </a>
+      <a href="tel:+917991492897"
+         class="flex items-center gap-2 px-6 py-3 bg-[#e53935] text-white rounded-full font-bold shadow-lg hover:bg-[#00cfff] transition text-lg">
+        <i class="fa fa-phone-alt text-2xl"></i> Call to Register
+      </a>
+    </div>
+
+    <!-- Dynamic Card Container -->
+    <div id="training-placement-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Cards will be injected here -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const trainingPlacements = [
+    {
+      icon: "fa-user-graduate",
+      title: "One-to-One Sessions",
+      desc: "Personalized mentorship and guidance for every learner."
+    },
+    {
+      icon: "fa-laptop-code",
+      title: "Live Projects",
+      desc: "Work on real-world projects to build a strong portfolio."
+    },
+    {
+      icon: "fa-comments",
+      title: "Interview Prep",
+      desc: "Mock interviews, aptitude, and soft skills training."
+    },
+    {
+      icon: "fa-file-alt",
+      title: "Resume Building",
+      desc: "Craft a professional resume that stands out to employers."
+    },
+    {
+      icon: "fa-certificate",
+      title: "Certification",
+      desc: "Get certified and validate your skills for the industry."
+    },
+    {
+      icon: "fa-briefcase",
+      title: "Job Assistance",
+      desc: "Placement support and job referrals to top companies."
+    },
+    {
+      icon: "fa-laptop",
+      title: "IT Training",
+      desc: "Comprehensive IT skills for software, web, and support roles."
+    }
+  ];
+
+  const container = document.getElementById("training-placement-cards");
+
+  trainingPlacements.forEach((item, i) => {
+    const div = document.createElement("div");
+    div.className =
+      "bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-l-4 border-[#00cfff]";
+    div.setAttribute("data-aos", "fade-up");
+    if (i % 3 !== 0) div.setAttribute("data-aos-delay", i * 100);
+
+    div.innerHTML = `
+      <i class="fa ${item.icon} text-4xl text-[#e53935] mb-3"></i>
+      <h4 class="font-semibold text-lg mb-1">${item.title}</h4>
+      <p class="text-gray-600 text-center">${item.desc}</p>
+    `;
+
+    container.appendChild(div);
+  });
+</script>
+
+
+    <!-- Why Choose Us -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#00cfff] mb-10 text-center" data-aos="fade-up">Why Choose Us</h2>
+
+    <!-- Dynamic List Container -->
+    <ul id="why-choose-list" class="space-y-6 text-xl"></ul>
+
+    <!-- Highlights -->
+    <div class="mt-10 flex flex-wrap gap-4 justify-center">
+      <span class="bg-[#e5393510] text-[#e53935] px-4 py-2 rounded-full font-semibold">10+ Years of Excellence</span>
+      <span class="bg-[#00cfff10] text-[#00cfff] px-4 py-2 rounded-full font-semibold">500+ Projects Delivered</span>
+      <span class="bg-black/10 text-black px-4 py-2 rounded-full font-semibold">1000+ Students Trained</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  const reasons = [
+    "Practical learning with real-world projects and hands-on experience.",
+    "Expert mentors from the industry with years of experience.",
+    "100% placement assistance and career guidance.",
+    "Cutting-edge curriculum updated with latest tech trends.",
+    "Vibrant community, hackathons, webinars, and networking events."
+  ];
+
+  const listContainer = document.getElementById("why-choose-list");
+
+  reasons.forEach((reason, i) => {
+    const li = document.createElement("li");
+    li.className = "flex items-center";
+    li.setAttribute("data-aos", "fade-right");
+    if (i > 0) li.setAttribute("data-aos-delay", i * 100);
+
+    li.innerHTML = `
+      <i class="fa fa-check-circle text-[#00cfff] mr-4 animate-bounce text-2xl"></i>
+      <span>${reason}</span>
+    `;
+    listContainer.appendChild(li);
+  });
+</script>
+
+
+   <!-- Testimonials -->
+<section id="testimonials" class="py-20 bg-gradient-to-b from-white via-[#00cfff10] to-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#00cfff] mb-14 text-center" data-aos="fade-up">What Our Clients Say</h2>
+
+    <div id="testimonial-grid" class="grid grid-cols-1 md:grid-cols-3 gap-10"></div>
+  </div>
+</section>
+
+<script>
+  const testimonials = [
+    {
+      img: "https://randomuser.me/api/portraits/men/32.jpg",
+      message: "“Vireonix helped me land my dream job! The training was hands-on and the mentors were amazing. The placement support is real!”",
+      name: "Amit S.",
+      title: "Software Engineer, Bangalore"
+    },
+    {
+      img: "https://randomuser.me/api/portraits/women/44.jpg",
+      message: "“The projects and interview prep gave me the confidence to ace my interviews. Highly recommend their training programs!”",
+      name: "Priya K.",
+      title: "UI/UX Designer, Delhi"
+    },
+    {
+      img: "https://randomuser.me/api/portraits/men/65.jpg",
+      message: "“Great experience! The team is supportive and the learning is practical. I loved the hackathons and webinars.”",
+      name: "Rahul D.",
+      title: "Data Analyst, Mumbai"
+    }
+  ];
+
+  const testimonialContainer = document.getElementById("testimonial-grid");
+
+  testimonials.forEach((t, i) => {
+    const card = document.createElement("div");
+    card.className = "bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center hover:shadow-2xl transition transform hover:-translate-y-2 hover:scale-105 border-b-4 border-[#00cfff]";
+    card.setAttribute("data-aos", "fade-in");
+    if (i > 0) card.setAttribute("data-aos-delay", i * 100);
+
+    card.innerHTML = `
+      <img src="${t.img}" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-4 border-[#00cfff] shadow-lg" loading="lazy">
+      <p class="italic mb-3 text-gray-700">${t.message}</p>
+      <span class="font-semibold text-[#e53935]">${t.name}</span>
+      <span class="text-xs text-gray-400">${t.title}</span>
+    `;
+
+    testimonialContainer.appendChild(card);
+  });
+</script>
+
+
+   
+
+
+   
+    <!-- Trust & Registration Section -->
+<section id="trust" class="py-16 bg-gradient-to-br from-vireonixGreen/10 via-white to-vireonixRed/10 border-t-2 border-vireonixGreen/20 border-b-2 border-vireonixRed/20">
+  <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+    <div class="flex-1 flex flex-col items-center md:items-start">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-vireonixGreen mb-4 flex items-center gap-3">
+        <i class="fa fa-shield-alt text-vireonixRed animate-pulse"></i>
+        Trust & Registration
+      </h2>
+      <ul class="space-y-3 text-base md:text-lg mb-6">
+        <li class="flex items-center gap-2"><i class="fa fa-building text-vireonixRed"></i> <span class="font-semibold">Dortex AI Pvt. Ltd.</span></li>
+        <li class="flex items-center gap-2"><i class="fa fa-calendar-alt text-vireonixGreen"></i> <span>Incorporated on <span class="font-semibold">22 June 2024</span></span></li>
+        <li class="flex items-center gap-2"><i class="fa fa-id-card text-vireonixRed"></i> <span>CIN: <span class="font-semibold">U62099PB2024PTC061879</span></span></li>
+        <li class="flex items-center gap-2"><i class="fa fa-hashtag text-vireonixGreen"></i> <span>Registration No: <span class="font-semibold">061879</span></span></li>
+        <li class="flex items-center gap-2"><i class="fa fa-university text-vireonixRed"></i> <span>ROC: <span class="font-semibold">ROC Chandigarh</span></span></li>
+        <li class="flex items-center gap-2"><i class="fa fa-bolt text-vireonixGreen"></i> <span>Status: <span class="font-semibold text-green-600">Active</li>
+        <li class="flex items-center gap-2"><i class="fa fa-award text-vireonixGreen"></i> <span>Trusted by 1000+ Students & 500+ Clients</span></li>
+      </ul>
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <div class="flex gap-4 mt-6 flex-wrap justify-center">
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-vireonixRed/10 text-vireonixRed rounded-full text-xs font-semibold"><i class="fa fa-check-circle"></i> ISO 9001:2015</span>
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-black/10 text-black rounded-full text-xs font-semibold"><i class="fa fa-user-shield"></i> Verified Indian Startup</span>
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-vireonixRed/10 text-vireonixRed rounded-full text-xs font-semibold"><i class="fa fa-bolt"></i> CIN: U62099PB2024PTC061879</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- Contact Dortex AI -->
+<section id="contact" class="py-20 bg-gradient-to-br from-vireonixGreen/10 via-white to-vireonixRed/10 relative overflow-hidden">
+  <div class="absolute -top-20 -left-20 w-96 h-96 bg-vireonixRed/10 rounded-full blur-3xl"></div>
+  <div class="max-w-4xl mx-auto px-4 relative z-10">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-vireonixGreen mb-10 text-center" data-aos="fade-up">Contact Dortex AI</h2>
+
+    <div class="flex flex-col md:flex-row gap-10 items-stretch">
+      
+      <!-- Form -->
+      <form class="flex-1 space-y-8 bg-white/90 rounded-2xl shadow-2xl p-10 border border-vireonixGreen/20 backdrop-blur" data-aos="fade-up" data-aos-delay="100">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <input type="text" placeholder="Full Name" class="border-2 border-vireonixRed focus:border-vireonixGreen rounded-lg px-5 py-4 outline-none transition text-lg bg-white/80" required>
+          <input type="email" placeholder="Email Address" class="border-2 border-vireonixRed focus:border-vireonixGreen rounded-lg px-5 py-4 outline-none transition text-lg bg-white/80" required>
+        </div>
+        <input type="tel" placeholder="Phone Number" class="border-2 border-vireonixRed focus:border-vireonixGreen rounded-lg px-5 py-4 outline-none transition w-full text-lg bg-white/80" required>
+        <textarea placeholder="Your Message" rows="5" class="border-2 border-vireonixRed focus:border-vireonixGreen rounded-lg px-5 py-4 outline-none transition w-full text-lg bg-white/80" required></textarea>
+        <button type="submit" class="w-full py-4 bg-gradient-to-r from-vireonixRed to-vireonixGreen text-white font-bold rounded-lg shadow-lg hover:from-vireonixGreen hover:to-vireonixRed transition duration-300 transform hover:scale-105 text-lg tracking-wide flex items-center justify-center gap-2">
+          <i class="fa fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+
+      <!-- Info -->
+      <div class="flex-1 flex flex-col justify-center items-center bg-gradient-to-br from-vireonixGreen/10 to-vireonixRed/10 rounded-2xl shadow-xl p-10 border border-vireonixRed/20 backdrop-blur" data-aos="fade-left" data-aos-delay="200">
+        <h3 class="text-2xl font-bold text-vireonixRed mb-4 flex items-center gap-2"><i class="fa fa-building"></i> Dortex AI Pvt. Ltd.</h3>
+        <p class="text-gray-700 mb-6 text-center">Incorporated on <strong>22 June 2024</strong>, CIN: <strong>U62099PB2024PTC061879</strong>, registered with RoC Chandigarh and currently Active.</p>
+        <div class="space-y-3 w-full text-center">
+          <p class="flex items-center justify-center gap-3 text-lg"><i class="fa fa-envelope text-vireonixGreen"></i> <span>info@dortexai.com</span></p>
+          <p class="flex items-center justify-center gap-3 text-lg"><i class="fa fa-phone text-vireonixGreen"></i> <span>+91 7991492897</span></p>
+          <p class="flex items-center justify-center gap-3 text-lg"><i class="fa fa-map-marker-alt text-vireonixGreen"></i> <span>431, Gilco Valley, Punjab 140307</span></p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex gap-4 mt-6 justify-center">
+          <a href="#" class="text-vireonixRed hover:text-vireonixGreen transition text-2xl"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-vireonixRed hover:text-vireonixGreen transition text-2xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-vireonixRed hover:text-vireonixGreen transition text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-vireonixRed hover:text-vireonixGreen transition text-2xl"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Decorative Wavy SVG Top Border -->
+<div class="-mt-16">
+  <svg viewBox="0 0 1440 100" class="w-full h-20" preserveAspectRatio="none">
+    <path fill="url(#footerwave)" fill-opacity="1"
+      d="M0,64L48,58.7C96,53,192,43,288,53.3C384,64,480,96,576,96C672,96,768,64,864,53.3C960,43,1056,53,1152,69.3C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+    <defs>
+      <linearGradient id="footerwave" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#6366f1" />
+        <stop offset="100%" stop-color="#000" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+
+<!-- Footer -->
+<footer class="relative bg-gradient-to-br from-indigo-900 via-gray-900 to-indigo-800 text-white py-16 px-4 shadow-2xl overflow-hidden rounded-t-3xl border-t-4 border-indigo-400/40">
+  <div class="absolute inset-0 bg-white/5 backdrop-blur-2xl rounded-t-3xl pointer-events-none"></div>
+  
+  <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-start gap-10">
+
+    <!-- Brand Info -->
+    <div class="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+      <div class="text-3xl font-extrabold text-indigo-300 flex items-center gap-3 mb-2">
+        <a href="/" class="flex items-center gap-3 mb-2">
+    <img src="/assets/dortex_logo.jpg" alt="Dortex AI Logo" class="h-10 w-auto" />
+    <span class="text-2xl font-extrabold text-indigo-300">Dortex AI Pvt. Ltd.</span>
+  </a>
+      </div>
+      <p class="text-white/80 text-sm leading-relaxed">
+        CIN: U62099PB2024PTC061879<br>
+        Incorporated on 22 June 2024<br>
+        RoC: Chandigarh
+      </p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="flex flex-col md:items-center md:flex-row md:space-x-10 text-base font-medium text-white/90">
+      <a href="#home" class="hover:text-indigo-300 transition">Home</a>
+      <a href="#products" class="hover:text-indigo-300 transition">Products</a>
+      <a href="#about" class="hover:text-indigo-300 transition">About</a>
+      <a href="#contact" class="hover:text-indigo-300 transition">Contact</a>
+    </div>
+
+    <!-- Legal Links -->
+    <div class="flex flex-col space-y-2 text-white/70 text-sm md:text-right">
+      <a href="privacy-policy.html" class="hover:text-indigo-400 transition">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-indigo-400 transition">Terms of Service</a>
+      <a href="refund-policy.html" class="hover:text-indigo-400 transition">Refund Policy</a>
+    </div>
+  </div>
+
+  <!-- Social & Copy -->
+  <div class="mt-12 text-center relative z-10">
+    <div class="flex justify-center gap-5 mb-6">
+      <a href="#" class="group hover:text-indigo-300 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="group hover:text-indigo-300 transition text-2xl"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="group hover:text-indigo-300 transition text-2xl"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="group hover:text-indigo-300 transition text-2xl"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="text-white/80 text-base">
+      <span class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-400/20 rounded-full font-semibold text-white/90 shadow-md mb-2 animate__animated animate__fadeInUp animate__delay-1s">
+        &copy; 2024 Dortex AI Pvt. Ltd. All rights reserved.
+      </span><br>
+      <span class="text-white/60 text-sm">
+        Designed with <i class="fa fa-heart text-indigo-300 animate-pulse"></i> by 
+        <span class="font-bold text-indigo-200">Team Dortex</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollToTop"
+    class="fixed bottom-8 right-8 bg-gradient-to-r from-indigo-500 to-indigo-400 text-white p-4 rounded-full shadow-xl hover:from-indigo-700 hover:to-indigo-500 transition transform hover:scale-110 z-50 animate-pulse ring-4 ring-indigo-300/30 focus:outline-none">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+</footer>
+
+
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ once: true, duration: 800 });
+      // Hamburger menu
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMenu = document.getElementById('close-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+      });
+      closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenu.classList.remove('translate-x-0');
+      });
+      // Close mobile menu when any link inside it is clicked
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenu.classList.remove('translate-x-0');
+        });
+      });
+      // Scroll to top button
+      const scrollBtn = document.getElementById('scrollToTop');
+      window.addEventListener('scroll', () => {
+        if(window.scrollY > 300) {
+          scrollBtn.classList.remove('hidden');
+        } else {
+          scrollBtn.classList.add('hidden');
+        }
+      });
+      scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      // Smooth scroll for menu links
+      document.querySelectorAll('nav a, footer a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          if(this.hash) {
+            e.preventDefault();
+            document.querySelector(this.hash).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+      // Close mobile menu on link click
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenu.classList.remove('translate-x-0');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
