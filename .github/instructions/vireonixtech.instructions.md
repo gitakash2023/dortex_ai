@@ -1,4 +1,4 @@
-// Build a fully animated, mobile-friendly, responsive landing page for a company named "Vireonix Technologies" using HTML, TailwindCSS (via CDN), and JavaScript (optional).
+// Build a fully animated, mobile-friendly, responsive landing page for a company named "dortexai Technologies" using HTML, TailwindCSS (via CDN), and JavaScript (optional).
 
 // 🌈 Theme based on company logo:
 // - Red: #F24C4C (primary buttons and accents)
